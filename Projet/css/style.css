@@ -41,6 +41,7 @@ Modules - reusable parts of our design
   max-width: 1170px;
   margin: 0 auto;
 }
+
 .cd-container::after {
   /* clearfix */
   content: '';
@@ -56,13 +57,12 @@ Main components
 header {
   position: relative;
   height: 400px;
-  background: white;
   text-align: center;
   margin-bottom: 1em;
   padding-top: 3em;
 }
 
-header img {
+.phoenix img {
   height: 200px;
 }
 
@@ -71,12 +71,61 @@ header h1 {
   font-size: 1.25rem;
   margin-bottom: 30px;
 }
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 380px) {
+
+  body {
+    background-image: #ffffff;
+  }
+
   header {
     margin-bottom: 4em;
   }
+
+  header #cd-logo img {
+    height: 30px;
+    margin-bottom: 3em;
+  }
+
+
+@media only screen and (min-width: 768px) {
+
+  body {
+    background-image:url(../img/Circuit-imprimé8.svg);
+    background-size: cover;
+  }
+
+  header {
+    margin-bottom: 4em;
+  }
+
+  header #cd-logo img {
+    height: 30px;
+    margin-bottom: 3em;
+  }
+
+  .cd-container {
+    /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  #center {
+    margin: 0 0 0 50px;
+  }
 }
+
 @media only screen and (min-width: 1170px) {
+
+  body {
+    background-image:url(../img/Circuit-imprimé7.svg);
+    background-size: cover;
+  }
+
   header {
     height: 500px;
     padding-top: 11em;
@@ -85,11 +134,31 @@ header h1 {
     position: absolute;
     top: 40px;
     left: 5%;
+    height: 100px;
   }
+
+  header #cd-logo img {
+    height: 50px;
+  }
+
   header h1 {
     font-size: 40px;
     font-size: 2.5rem;
     font-weight: 300;
+  }
+  
+  .cd-container {
+    /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  #first {
+    margin: 0 0 0 50px;
   }
 }
 
@@ -378,6 +447,10 @@ header h1 {
     -moz-animation: cd-bounce-in 0.3s linear;
     animation: cd-bounce-in 0.3s linear;
   }
+}
+
+#presentation {
+  background-color: #fff;
 }
 
 #cd-gallery-items li {
