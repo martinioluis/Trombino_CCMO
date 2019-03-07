@@ -1,5 +1,33 @@
+h1 {
+   font-family: 'Sniglet', cursive;
+   font-size: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 80px;
+   margin-bottom: 70px;
+}
+
+body {
+  background-image: url(../img/Circuit-imprimé16.svg);
+  background-size: cover;
+}
+
+header #cd-logo img {
+  height: 50px;
+  margin-bottom: 3em;
+}
+
+header {
+  position: relative;
+  height: 100px;
+  text-align: center;
+  margin-bottom: 1em;
+  padding-top: 3em;
+}
+
 .container-card {
-  width:100vw;
+  width: 100vw;
   height: 100vh;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -16,13 +44,14 @@
 }
 
 .container-card .card {
-  background-color: rgba(232, 74, 100, 0.8);
+  background-color: #f47172;
   padding: 33px;
+  border-radius: 15px;
 }
 
 .card {
-  width: 100vh;
-  height: 600px;
+  width: 80vh;
+  height: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,20 +103,48 @@
 }
 
 @media only screen and (min-width: 768px) {
+
+  body {
+    background-image: url(../img/Circuit-imprimé23.svg);
+    background-size: cover;
+  }
+
+  .container-card {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-family: 'Sniglet', cursive;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 70px;
+  }
+  
   .card {
-    width: 500px;
+    width: 100vh;
     height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+    margin-top: 20px;
   }
 
   .card-header {
     height: 120px;
     width: 120px;
-    padding-bottom: 0px;
+    padding-top: 0px;
   }
 
   .card-header img {
@@ -102,7 +159,34 @@
 }
 
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
+
+  body {
+    background-image: url(../img/Circuit-imprimé21.svg);
+    background-size: cover;
+  }
+
+  .container-card {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-family: 'Sniglet', cursive;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  
   .card {
     width: 70%;
     height: 400px;
@@ -114,14 +198,14 @@
   }
 
   .card-header {
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     padding-bottom: 0px;
   }
 
   .card-header img {
-    height: 150px;
-    border-radius: 100px;
+    height: 250px;
+    border-radius: 200px;
   }
 
   .card-body {
@@ -135,3 +219,4 @@
     margin-top: 150px;
   }
 }
+
