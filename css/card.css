@@ -6,10 +6,11 @@ h1 {
    align-items: center;
    margin-top: 80px;
    margin-bottom: 70px;
+   text-shadow: 5px 5px 5px #d3d3d3;
 }
 
 body {
-  background-image: url(../img/Circuit-imprimé16.svg);
+  background-image: url(../img/Circuit-imprimé24.svg);
   background-size: cover;
 }
 
@@ -44,9 +45,12 @@ header {
 }
 
 .container-card .card {
-  background-color: #f47172;
+  background-color: #f8f1e6;
   padding: 33px;
   border-radius: 15px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #f47172;
 }
 
 .card {
@@ -77,11 +81,13 @@ header {
 
 .card-body {
   margin: 5px;
+  font-family:'PT Serif', serif;
+  text-align: center;
   background-color: #fff;
-  color: #E84A64;
+  color: #000000;
   border-radius: 15px;
   width: 250px;
-  margin-top: 5%
+  margin-top: 5%;
 }
 
 .card-body .description {
@@ -95,7 +101,7 @@ header {
 }
 
 .card-body .reseaux-sociaux a {
-  color: #e84a64;
+  color: #4267b2;
 }
 
 .card-body .reseaux-sociaux ul li {
@@ -105,7 +111,7 @@ header {
 @media only screen and (min-width: 768px) {
 
   body {
-    background-image: url(../img/Circuit-imprimé23.svg);
+    background-image: url(../img/Circuit-imprimé24.svg);
     background-size: cover;
   }
 
