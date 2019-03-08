@@ -1,3 +1,31 @@
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: #e84a64;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+
+body {
+    font-size: 100%;
+    font-family: 'PT Serif', serif;
+    color: #2c3e51;
+  }
+
 .cd-container {
     width: 90%;
     max-width: 1170px;
@@ -59,6 +87,13 @@
 }
 
 @media only screen and (min-width: 768px) {
+
+   header {
+        height: 500px;
+        background-image:url(../img/Circuit-imprimé12.svg);
+        background-size: cover;
+      }
+
     #cd-gallery-items li {
         width: 48%;
         float: left;
@@ -71,6 +106,12 @@
 }
 
 @media only screen and (min-width: 1170px) {
+
+    header {
+        background-image:url(../img/Circuit-imprimé12.svg);
+        background-size: cover;
+      }
+
     #cd-gallery-items li {
         width: 31%;
         float: left;
